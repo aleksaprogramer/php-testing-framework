@@ -15,12 +15,3 @@ $test_for_sabiranje->assert('normalno sabiranje', sabiranje(5, 5), 10);
 $test_for_sabiranje->assert('sabiranje sa nulom', sabiranje(4, 0), 4);
 $test_for_sabiranje->assert('sabiranje sa negativnim brojevima', sabiranje(-4, 4), 0);
 $test_for_sabiranje->assert('sabiranje sa dva negativna broja', sabiranje(-4, -4), -8);
-
-?>
-
-<div class="post-header">
-    <div class="container">
-        <h4 id="tests-num">Number of tests: <?php echo $_SESSION['tests']; ?></h4>
-        <h4 id="failures-num">Failures: <?php echo $_SESSION['failures']; ?></h4>
-    </div>
-</div>

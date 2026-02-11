@@ -29,12 +29,12 @@ body {
     color: #430d8a;
 }
 
-.post-header {
+.results {
     position: absolute;
     top: 15px;
     left: 220px;
 }
 
-.post-header #failures-num {
+.results #failures-num {
     color: #ba0505;
 }

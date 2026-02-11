@@ -24,12 +24,12 @@ class Test {
         echo '<div class="container">' . "Test Case: " . $case . "<br>" . '</div>';
 
         if ($function_return === $equal_to) {
-            echo '<div class="container">' . "Passed &#10004" . "<br><br>" . '</div>';
+            echo '<div class="container">' . "<p>Passed &#10004</p>" . "<br><br>" . '</div>';
 
         } else {
             $_SESSION['failures']++;
-            echo '<div class="container">' . "Failed &#10008" . "<br>" . '</div>';
-            echo '<div class="container">' . "Expected $function_return to equal $equal_to." . "<br>" . '</div>';
+            echo '<div class="container">' . "<p>Failed &#10008</p>" . "<br>" . '</div>';
+            echo '<div class="container">' . "<p>Expected $function_return to equal $equal_to.</p>" . "<br>" . '</div>';
         }
     }
 }
