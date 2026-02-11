@@ -23,4 +23,14 @@ function test ($title, $case, $function, $to_equal) {
 
 // Trying out basic testing function
 test('sabiranje', 'Normalno sabiranje', sabiranje(5, 5), 10);
-test('sabiranje', 'Sabiranje sa nulom', sabiranje(5, 0), 10);
+test('sabiranje', 'Sabiranje sa nulom', sabiranje(5, 0), 5);
+test('sabiranje', 'Sabiranje sa brojevima ispod nule', sabiranje(-4, 4), 0);
+
+?>
+
+<div class="post-header">
+    <div class="container">
+        <h4 id="tests-num">Number of tests: <?php echo $_SESSION['tests']; ?></h4>
+        <h4 id="failures-num">Failures: <?php echo $_SESSION['failures']; ?></h4>
+    </div>
+</div>

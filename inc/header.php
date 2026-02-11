@@ -11,8 +11,6 @@
         <header>
             <div class="container">
                 <h2 class="logo">PHP Testing</h2>
-                <h4 id="tests-num">Number of tests: <?php echo $_SESSION['tests']; ?></h4>
-                <h4 id="failures-num">Failures: <?php echo $_SESSION['failures']; ?></h4>
             </div>
         </header>
     </div>
