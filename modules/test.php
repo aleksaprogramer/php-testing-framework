@@ -13,6 +13,8 @@ test('Sabiranje sa negativnim brojevima', sabiranje(-4, -4), -8);
 test_title('oduzimanje');
 test('normalno oduzimanje', oduzimanje(5, 4), 1);
 test('oduzimanje sa nulom', oduzimanje(10, 0), 10);
+test('oduzimanje sa negativnim brojevima', oduzimanje(-10, -40), -30);
+test('oduzimanje sa brojevima iznad 1000', oduzimanje(1001, 206), 796);
 
 // Trying out class testing functions
 // $test_for_sabiranje = new Test('sabiranje()');
