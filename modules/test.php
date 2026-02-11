@@ -7,14 +7,14 @@ $_SESSION['failures'] = 0;
 // Basic testing function
 function test ($title, $function, $to_equal) {
     $_SESSION['tests']++;
-    echo $title . ":" . "<br>";
+    echo '<div class="container">' . $title . ":" . "<br>" . '</div>';
 
     if ($function === $to_equal) {
-        echo "Passed" . "<br><br>";
+        echo '<div class="container">' . "Passed" . "<br><br>" . '</div>';
 
     } else {
         $_SESSION['failures']++;
-        echo "Failed" . "<br><br>";
+        echo '<div class="container">' . "Failed" . "<br><br>" . '</div>';
     }
 }
 

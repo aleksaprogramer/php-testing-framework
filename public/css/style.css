@@ -23,3 +23,12 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.testing-framework header .logo {
+    margin-bottom: 10px;
+    color: #430d8a;
+}
+
+.testing-framework header #failures-num {
+    color: #ba0505;
+}
