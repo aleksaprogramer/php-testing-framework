@@ -10,6 +10,10 @@ test('Sabiranje sa nulom', sabiranje(5, 0), 5);
 test('Sabiranje sa brojevima ispod nule', sabiranje(-4, 4), 0);
 test('Sabiranje sa negativnim brojevima', sabiranje(-4, -4), -8);
 
+test_title('oduzimanje');
+test('normalno oduzimanje', oduzimanje(5, 4), 1);
+test('oduzimanje sa nulom', oduzimanje(10, 0), 10);
+
 // Trying out class testing functions
 // $test_for_sabiranje = new Test('sabiranje()');
 // $test_for_sabiranje->title();

@@ -1,7 +1,7 @@
 <?php
 
 function test_title ($title) {
-    echo '<div class="container">' . "<h3>Function: " . $title . '</h3></div>';
+    echo "<div class='container'><hr style='margin-top: 30px;'><h3 style='margin-top: 10px;'>Function: $title()</h3></div>";
 }
 
 function test ($case, $function_return, $to_equal) {
