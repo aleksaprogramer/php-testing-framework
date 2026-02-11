@@ -1,20 +1,23 @@
 <?php
+require_once './modules/functions.php';
 
-function sabiranje ($a, $b) {
-    return $a + $b;
-}
+$_SESSION['tests'] = 0;
 
 // Basic testing function
 function test ($title, $function, $to_equal) {
-    echo $title . ":";
-    echo "<br>";
+    $_SESSION['tests']++;
+    echo $title . ":" . "<br>";
 
     if ($function === $to_equal) {
-        echo "Passed";
+        echo "Passed" . "<br>";
 
     } else {
-        echo "Failed";
+        echo "Failed" . "<br>";
     }
 }
 
+// Trying out basic testing function
 test('Funkcija sabiranja', sabiranje(5, 5), 10);
+test('Funkcija oduzimanja', oduzimanje(12, 10), 2);
+
+echo "<br><br>" . "Number of tests: " . $_SESSION['tests'];
