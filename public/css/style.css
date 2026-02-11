@@ -37,3 +37,27 @@ body {
 .results #failures-num {
     color: #ba0505;
 }
+
+footer {
+    background-color: #ededed;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.warning-icon {
+    width: 120px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    filter: brightness(95%);
+}
+
+.warning-line {
+    width: 100%;
+    background-color: #e30000;
+    height: 25px;
+    position: absolute;
+    top: 72px;
+}
