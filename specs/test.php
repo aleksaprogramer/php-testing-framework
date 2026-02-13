@@ -16,5 +16,10 @@ require_once './modules/functions.php';
 // test('subtraction with negative number', subtraction(15, -1), 16);
 // test('subtraction with both negative numbers', subtraction(-15, -1), 14);
 
+testing('sabiranje')->title();
 testing('sabiranje')->test_case('normalno sabiranje')->expect(addition(2, 5))->to_equal(7);
 testing('sabiranje')->test_case('sabiranje sa nulom')->expect(addition(2, 0))->to_equal(2);
+
+title('sabiranje');
+test_case('normalno sabiranje')->expect(addition(2, 5))->to_equal(6);
+test_case('sabiranje sa nulom')->expect(addition(2, 0))->to_equal(3);

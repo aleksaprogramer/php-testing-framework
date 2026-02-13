@@ -9,6 +9,10 @@ class Test {
         $this->title = $title;
     }
 
+    public function title () {
+        echo "<div class='container'><hr style='margin-top: 30px;'><h3 style='margin-top: 10px;'>Function: $this->title()</h3></div>";
+    }
+
     public function test_case ($case) {
         $this->case = $case;
         return $this;
@@ -36,6 +40,16 @@ class Test {
 
 function testing ($title) {
     $new_test = new Test($title);
-    echo "<div class='container'><hr style='margin-top: 30px;'><h3 style='margin-top: 10px;'>Function: $title()</h3></div>";
+    return $new_test;
+}
+
+function title ($title) {
+    $new_test = new Test($title);
+    $new_test->title();
+}
+
+function test_case ($case) {
+    $new_test = new Test('test');
+    $new_test->test_case($case);
     return $new_test;
 }
