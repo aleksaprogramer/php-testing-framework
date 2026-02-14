@@ -12,4 +12,5 @@ require_once './specs/additionTest.php';
 
 require_once './lib/inc/results.php';
 require_once './lib/inc/warning-line.php';
+require_once './lib/inc/warning-sign.php';
 require_once './lib/inc/footer.php';
