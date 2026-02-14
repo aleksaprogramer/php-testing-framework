@@ -1,5 +1,6 @@
 <?php
 
 function addition ($x, $y) {
-    return $x + $y;
+    $result = $x + $y;
+    return (string)$result;
 }
